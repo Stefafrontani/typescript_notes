@@ -13,3 +13,65 @@ In other words:
 -   Writing typescript is the same as wrting just normal javascript with some "extra documentation"
 -   TS has no effect on how our code gets executed in node/browser
 -   TS is our pair in extreme programming
+
+## Types
+
+### Definition
+
+A type is an easy way to refer to the properties and functions (methods) that a particular value has
+Value, in this context, is whatever that can be assigned to a variable.
+In typescript EVERY value has a type
+
+### Types in javascript
+
+Primitive types
+
+-   number
+-   string
+-   boolean
+-   null
+-   undefined
+-   symbol
+-   void
+
+Object types
+
+-   arrays
+-   functions
+-   classes
+-   objects
+
+### Why do we use them?
+
+Types are used by typescript to analyze our code and cath errors.
+Types are useful to create documentation useful for others devs to understand our code more easily
+
+### Examples
+
+Working with Date object
+
+```
+const date = new Date();
+
+/*
+ * When accesing date properties, `data.` we would see the possible operations that can be done inside
+ */
+```
+
+Working with classes
+
+```
+class Color {};
+
+const color = new Color();
+
+/*
+ * The type of color variable will be Color.
+ * As soon as we start typing methods on Class Color, we would be able to access them inside color too
+ */
+```
+
+### When we use them?
+
+Everywhere.
+Every value inside our code, will have a type associated.
