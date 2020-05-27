@@ -1,6 +1,8 @@
 /* Variables */
 // Primitives
-let apples: number = 5;
+let applesAnnotation: number = 5;
+let applesInfered = 5; // Typescript can infer the type from the value assign in the same line the variable is declared.
+
 let speed: string = "fast";
 let hasName: boolean = false;
 let nothingMuch: null = null;

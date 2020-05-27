@@ -85,3 +85,11 @@ Type Inference
 Typescript by itselft will try to figure out what type of value a variable refers to
 
 HAsta el 558
+
+### Type Inference
+
+Every time we initialize a variable and assign a value `const name = 'stefano'`, we really are doing two steps at the same time:
+Declaration : `const name;`
+Initialization : `name = 'Stefano';`
+When we declare a value and assign a value in the same line, typescript can infere the value of that variable.
+Use always (Whenever we can).
