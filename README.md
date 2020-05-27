@@ -75,3 +75,13 @@ const color = new Color();
 
 Everywhere.
 Every value inside our code, will have a type associated.
+
+## Type Annotations VS Type Inference
+
+Type Annotations
+Code we add to tell typescript what type of value a variable will refer to.
+
+Type Inference
+Typescript by itselft will try to figure out what type of value a variable refers to
+
+HAsta el 558
