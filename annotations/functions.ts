@@ -28,3 +28,14 @@ const multiply = (a: number, b: number): number => {
 function divide(a: number, b: number): number {
     return a / b;
 }
+
+// Void and never
+// Void
+const logger = (message: string): void => {
+    console.log(message);
+};
+
+// Never
+const throwError = (error: string): never => {
+    throw new Error(error);
+};
