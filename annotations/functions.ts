@@ -15,3 +15,16 @@ const add = (a: number, b: number) => {
 const substract = (a: number, b: number) => {
     a - b;
 };
+
+// Other function typing syntax
+// 1) Annonymus Arrow function expression
+
+// 2) Annonymus function expression
+const multiply = (a: number, b: number): number => {
+    return a * b;
+};
+
+// 3) Named Function declaration
+function divide(a: number, b: number): number {
+    return a / b;
+}
