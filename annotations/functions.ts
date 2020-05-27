@@ -39,3 +39,9 @@ const logger = (message: string): void => {
 const throwError = (error: string): never => {
     throw new Error(error);
 };
+
+// Annotations and Destructuring
+const logWeather = ({ date, weather }: { date: Date; weather: string }) => {
+    console.log("Data: ", date);
+    console.log("Weather: ", weather);
+};

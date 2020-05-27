@@ -136,3 +136,8 @@ We use void in the return type of a function that never returns anything
 ### Never
 
 We use never when not only a function wont return anything but alse has a 100 % chance to stop its execution
+
+## Annotations and Destructuring
+
+When we destructure the variables passed to a function, we should always mantain separated the arguments and its type with a color ":".
+const func = ({ argumentFromObjPassedOne, argumentFromObjPassedTwo }: { argumentFromObjPassedOneType; argumentFromObjPassedTwoType }): returnType => {}
