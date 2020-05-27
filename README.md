@@ -109,3 +109,16 @@ Whenever we see Any Type:
 -   It's just a type, such as string or number
 -   Means TS has no idea of what this is, can not check for correct property references.
 -   Avoid them at all cost
+
+## Type Annotations and Inference for functions
+
+### Type annotations
+
+Code we add to tell TS what type of arguments a function will receive and what types of values it will return.
+
+In a previous commit "Annotations examples", when we typed a function, we did not type the function itself but the variable that would be assign that funcion as its value.
+To typed the function itself, the syntax goes
+From:
+`const functionDeclaration: (argument: type) => : type`
+To:
+`const variable = (argument: type) : type => { /_ function block code _/ }`
