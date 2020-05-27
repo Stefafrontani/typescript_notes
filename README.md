@@ -101,3 +101,11 @@ Declaration : `const name;`
 Initialization : `name = 'Stefano';`
 When we declare a value and assign a value in the same line, typescript can infere the value of that variable.
 Use always (Whenever we can).
+
+## Any Type
+
+Whenever we see Any Type:
+
+-   It's just a type, such as string or number
+-   Means TS has no idea of what this is, can not check for correct property references.
+-   Avoid them at all cost
