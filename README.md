@@ -86,6 +86,14 @@ Typescript by itselft will try to figure out what type of value a variable refer
 
 HAsta el 558
 
+### Type Annotations
+
+#### When to use it?
+
+When a function returns the 'any' type and we need to clarify the value.
+When we declare a variable in a line and assign value in another one.
+When we want a variable to have a type that can not be inferred
+
 ### Type Inference
 
 Every time we initialize a variable and assign a value `const name = 'stefano'`, we really are doing two steps at the same time:
