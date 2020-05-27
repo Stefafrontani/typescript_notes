@@ -122,3 +122,7 @@ From:
 `const functionDeclaration: (argument: type) => : type`
 To:
 `const variable = (argument: type) : type => { /_ function block code _/ }`
+
+### Type Inference
+
+TS will only try to figure out what type of value a function will return
