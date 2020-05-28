@@ -1,5 +1,5 @@
 const profile = {
-    name: "stefano",
+    firstName: "stefano",
     age: 20,
     coordinates: {
         lat: 0,
@@ -11,7 +11,7 @@ const profile = {
 };
 
 // Destructuring 0 deep object properties
-const { name, age }: { name: string; age: number } = profile;
+const { firstName, age }: { firstName: string; age: number } = profile;
 
 // Destructuring deeper object properties
 const {
