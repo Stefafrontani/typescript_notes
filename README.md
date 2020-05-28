@@ -141,3 +141,7 @@ We use never when not only a function wont return anything but alse has a 100 % 
 
 When we destructure the variables passed to a function, we should always mantain separated the arguments and its type with a color ":".
 const func = ({ argumentFromObjPassedOne, argumentFromObjPassedTwo }: { argumentFromObjPassedOneType; argumentFromObjPassedTwoType }): returnType => {}
+
+## Type Annotations for objects
+
+See examples in /annotations/objects.ts. Has a nice multi-level-properties-object destructuring.
