@@ -145,3 +145,23 @@ const func = ({ argumentFromObjPassedOne, argumentFromObjPassedTwo }: { argument
 ## Type Annotations for objects
 
 See examples in /annotations/objects.ts. Has a nice multi-level-properties-object destructuring.
+
+## Arrays
+
+TS can help with inference when extracting values.
+TS can prevent incompatible values. Do not push a number in a []string type
+TS can help with .map. i.e.:autocomplete for the methods of the variable been passed to the map function
+
+### Tuple - Is an array
+
+ORganize a collection of records, like an array, but the collection of records inside a tuple represents instead represents different properties of THE RECORD.
+
+An array:
+const drink = { color: 'red', carbonated: true }
+
+A tuple:
+const drink = ['red', true ]
+
+Order is crucial
+
+Ideally, object-format is a better representation of a record because we have keys attached to it that let us read and understand what we are working with. Not happen with tuples.
