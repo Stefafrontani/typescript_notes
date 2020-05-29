@@ -165,3 +165,11 @@ const drink = ['red', true ]
 Order is crucial
 
 Ideally, object-format is a better representation of a record because we have keys attached to it that let us read and understand what we are working with. Not happen with tuples.
+
+## Interfaces
+
+Cerate a new type, describing the propperty name and value types of an object.
+Interfaces allow not only reference primitive values inside of interface but also functions and other more complex objects
+
+Objects created as variables with a type interface must fullfilled the interface contract.
+If the interface has 1 property, ts will only check if the object has that list of 1 property. We can add others properties and TS will not complain.
