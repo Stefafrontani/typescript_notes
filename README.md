@@ -196,3 +196,5 @@ Same as js. class ClassName extends OtherClassname so the class ClassName inheri
 1. public: This method can be called any where, any time
 2. private: This method can only be called by other methods in the same class. No layer of security at all.
 3. protected: This method can be called by other methods in this class, or by other methods in child classes.
+
+Modiferies also works with values / properties of classes

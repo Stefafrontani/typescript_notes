@@ -1,4 +1,15 @@
 class Vehicle {
+    // color: string;
+    // constructor(color: string) {
+    // this.color = color;
+    // }
+    /* Same as this: */
+    constructor(
+        public color: string,
+        private model: number,
+        protected safe: boolean
+    ) {}
+
     public drive(): void {
         console.log("chugga chugga");
     }
@@ -25,10 +36,10 @@ class Car extends Vehicle {
     }
 }
 
-const vehicle = new Vehicle();
+const vehicle = new Vehicle("orange", 1994, true);
 vehicle.drive();
 // vehicle.honk(); // Bad - Error - Can not call outside the class
 
-const car = new Car();
+const car = new Car("black", 2000, false);
 car.drive();
 // car.honk(); // Bad - Error - can not call outside the class
