@@ -2,6 +2,9 @@ interface Vehicle {
     name: string;
     year: Date;
     color: string;
+}
+
+interface Reportable {
     summary(): string;
 }
 
@@ -14,6 +17,15 @@ const oldCar = {
     },
 };
 
+const drink = {
+    color: "Brown",
+    carbonated: true,
+    sugar: 40,
+    summary() {
+        return `This drink has ${this.sugar} grams of sugar`;
+    },
+};
+
 const printVehicle = (
     vehicle: Vehicle /* instead of this : { name: string; color: string; year: number } */
 ): void => {
@@ -23,3 +35,8 @@ const printVehicle = (
 };
 
 printVehicle(oldCar); // TS will iterate over Vehicle interface and see if the properties inside oldCar matches those.
+
+/* Refactor */
+const printSummary = (item: Reportable): void => {
+    console.log(item.summary());
+};

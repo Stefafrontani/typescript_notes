@@ -173,3 +173,12 @@ Interfaces allow not only reference primitive values inside of interface but als
 
 Objects created as variables with a type interface must fullfilled the interface contract.
 If the interface has 1 property, ts will only check if the object has that list of 1 property. We can add others properties and TS will not complain.
+
+We can use a single interface to describe properties of very different objects. We we do, we can have those objects interact with different functions.
+
+The general strategy for reusable code in TS:
+
+-   Create functions that accept arguments that are typed with interfaces
+-   Objects/Classes can decide to implement a given interface to work with a function
+
+The general picture is: we have some functionX that implements interfaxeY. If we create objectA and objectB and want to make them work with functionX, those objects must satisfy the interfaceY
