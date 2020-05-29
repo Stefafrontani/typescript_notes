@@ -182,3 +182,7 @@ The general strategy for reusable code in TS:
 -   Objects/Classes can decide to implement a given interface to work with a function
 
 The general picture is: we have some functionX that implements interfaxeY. If we create objectA and objectB and want to make them work with functionX, those objects must satisfy the interfaceY
+
+## Classes
+
+Blueprint to create an object with some fields (values) and methods (functions) to represent a thing
