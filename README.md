@@ -186,3 +186,7 @@ The general picture is: we have some functionX that implements interfaxeY. If we
 ## Classes
 
 Blueprint to create an object with some fields (values) and methods (functions) to represent a thing
+
+### Inheritance
+
+Same as js. class ClassName extends OtherClassname so the class ClassName inherits the methods on the OtherClassName
