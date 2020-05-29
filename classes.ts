@@ -25,6 +25,14 @@ class Vehicle {
 }
 
 class Car extends Vehicle {
+    constructor(
+        public wheels: number,
+        color: string,
+        model: number,
+        safe: boolean
+    ) {
+        super(color, model, safe);
+    }
     // Override drive method
     drive(): void {
         console.log("vrrooom|");
@@ -40,6 +48,6 @@ const vehicle = new Vehicle("orange", 1994, true);
 vehicle.drive();
 // vehicle.honk(); // Bad - Error - Can not call outside the class
 
-const car = new Car("black", 2000, false);
+const car = new Car(4, "black", 2000, false);
 car.drive();
 // car.honk(); // Bad - Error - can not call outside the class
