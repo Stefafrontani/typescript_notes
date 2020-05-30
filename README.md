@@ -227,3 +227,27 @@ Could be:
     Then import as `import RandomName from './path/to/module'`
 -   Non-default export Module
     Then import as `import { ExactModuleName } from './path/to/module'`
+
+## Make TS found source of errors
+
+./Mappable.ts
+interface Mappable { name: string; age: number; }
+
+./User.ts
+class User { name: string; constructor(name) {this.name = name} }
+// Improve class User:
+class User implements Mappable
+
+./index.ts
+function logNameAge(elem: Mappable) { console.log(elem.name, elem.age) }
+
+const user = new User('stefano');
+logNameAge(user);
+
+We have a function that receives an argument with type Mappable inside index.ts `function logNameAge(elem: Mappable)`. If we call that function with a user that does not meet the contract requirements by Mappable `logNameAge(user);`, TS will let you know that there is an error in the function call because USer does not have age property (missing a property)
+
+The "problem" is that TS will never tell you that the error is in the index.ts file, wihtin the row where the funciton is called with user that does not have a certain property define inside it
+
+Adding an implementation to that User class like `class User implements Mappable`, this time TS will point out to the exact source of the problem, the file when te class User si defined. ./User.ts as well as ./index.ts
+
+Look at the code of the commit of previous commit.
