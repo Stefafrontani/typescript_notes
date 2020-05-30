@@ -191,6 +191,10 @@ Blueprint to create an object with some fields (values) and methods (functions) 
 
 Same as js. class ClassName extends OtherClassname so the class ClassName inherits the methods on the OtherClassName
 
+If no constructor function is defined inside the child class, when intantiated a childClass, it will go and look for construct function in the parent
+
+If we define a constructor funciton inside our ChildClass, ts will complain that you must have a super call, we have to call to the constructor of the parent as well, with the specific parameters the ClassParent received.
+
 ### Class methods modifiers
 
 1. public: This method can be called any where, any time
@@ -198,3 +202,28 @@ Same as js. class ClassName extends OtherClassname so the class ClassName inheri
 3. protected: This method can be called by other methods in this class, or by other methods in child classes.
 
 Modiferies also works with values / properties of classes
+
+## Importing modules
+
+We can add any JS library inside our TS code
+But those should have attached to them a type definition file that will have:
+They are kind of adapter between ts code and js library
+These files will tell TS:
+
+-   Functions available inside the library
+-   Arguments they take
+-   Values they return
+
+These types definitions files sometimes are inside the library and other times we need to install with the syntax @types/{libraryNAme} - Almost all known libraries already have these types definitions files.
+
+These types are placed in a mega repo DefinitivelyTyped - @types
+
+## Exports Statements
+
+Same as js modules.
+Could be:
+
+-   Default: export default Module
+    Then import as `import RandomName from './path/to/module'`
+-   Non-default export Module
+    Then import as `import { ExactModuleName } from './path/to/module'`
